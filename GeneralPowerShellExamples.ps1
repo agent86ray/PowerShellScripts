@@ -20,4 +20,8 @@ https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/
 
 #>
 
-Get-ChildItem -Path C:\ETL\FORMAT_FILES | Get-Member
+Get-ChildItem -Path C:\ETL\FORMAT_FILES | Get-Member | Export-Excel -Now
+
+Get-ChildItem -Path C:\ETL\FORMAT_FILES | Select-Object DirectoryName, FullName, Extension, Name, Length,LastWriteTime
+
+
