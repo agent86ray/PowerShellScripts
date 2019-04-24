@@ -12,6 +12,8 @@ Get-Help Write-SqlTableData -Examples
 
 Get-Help Read-SqlTableData -Examples
 
+Get-Help Invoke-Sqlcmd -Examples
+
 # create database, schema, table if it doesn't exist
 Get-ChildItem -Path C:\ETL\FORMAT_FILES | Select-Object DirectoryName, FullName, Extension, Name, Length,LastWriteTime | Write-SQlTableData -ServerInstance localhost -DatabaseName ETL -SchemaName dbo -TableName FORMAT_FILES -Force
 
