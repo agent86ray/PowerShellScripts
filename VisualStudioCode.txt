@@ -1,2 +1,11 @@
 Download: https://code.visualstudio.com/download
 
+Install PowerShell extension: 
+Ctrl + Shift + X
+Search for PowerShell
+Click Install
+Select PowerShell ISE as color
+
+
+SHIFT + CTRL + P
+
