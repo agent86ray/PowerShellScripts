@@ -4,9 +4,13 @@ Install-Module -Name SqlServer -Force -AllowClobber
 
 Update-Module -Name SqlServer -WhatIf
 
-Get-Command -Module SqlServer -Noun *JoB* | Export-Excel -Now
+Import-Module -Name SqlServer
+
+Get-Command -Module SqlServer -Noun *Job* | Export-Excel -Now
 
 Get-Command -Module SqlServer | Out-GridView
+
+Get-Help -Name SqlServer\Get-SqlInstance -Examples
 
 Get-Help Write-SqlTableData -Examples
 
