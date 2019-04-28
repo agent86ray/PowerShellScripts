@@ -1,0 +1,4 @@
+Check PowerShellGallery.com for PowerShell dowloads
+
+Run powerShell as Administrator
+Install-Module -Name SqlServer
