@@ -1,5 +1,9 @@
 ﻿<# SqlServer #>
 
+<# Check on PowerShellGallery to find out the details of the SqlServer module #>
+<# Note the required version of PowerShell #>
+<# Instructions for installing PowerShell: https://docs.microsoft.com/en-us/powershell/scripting/install/installing-windows-powershell?view=powershell-6 #>
+
 Install-Module -Name SqlServer -Force -AllowClobber
 
 Update-Module -Name SqlServer -WhatIf
@@ -36,3 +40,4 @@ Set-SqlErrorLog
 Write-SqlTableData -ServerInstance localhost -Database ETL -SchemaName dbo -TableName CONTACT -Force
 
 
+$PSVersionTable
