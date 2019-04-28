@@ -26,3 +26,9 @@ $instance.Configuration.Properties
 
 Set-SqlErrorLog
 
+# insert to table from CSV; -Force will create database, schema, and table
+# if it doesn't exist
+(Import-CSV -Path "C:\repos\PowerShellScripts\CONTACT.CSV") |
+Write-SqlTableData -ServerInstance localhost -Database ETL -SchemaName dbo -TableName CONTACT -Force
+
+
