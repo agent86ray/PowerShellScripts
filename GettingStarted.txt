@@ -1,4 +1,8 @@
 Check PowerShellGallery.com for PowerShell dowloads
 
-Run powerShell as Administrator
+Run powerShell as Administrator; may need -Force and/or -AllowClobber
 Install-Module -Name SqlServer
+
+Update-Module -Name SqlServer -WhatIf
+
+
